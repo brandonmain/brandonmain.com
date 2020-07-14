@@ -1,5 +1,5 @@
 import Head from 'next/head'
-//import styles from '../styles/navbar.module.css'
+import styles from '../styles/navbar.module.css'
 import { Component } from 'react'
 import classNames from 'classnames'
 
