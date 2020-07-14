@@ -1,0 +1,42 @@
+.container {
+    margin-top: 63px;
+    height: 1000px;
+    text-align: center;
+}
+
+.square {
+    height: 50vh;
+    width: 50vw;
+    background: #005c97; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #005c97, #006cb1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #005c97, #006cb1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    z-index: 0;
+    position: absolute;
+}
+
+.container__div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    z-index: 10;
+    width: 100%;
+    height: 25%;
+    justify-content: space-around;
+    color: black;
+    font-size: calc((100 - 26) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.container__h1 {
+    font-size: min(max(1vw, 4vw), 100px);
+    align-self: start;
+    color: black;
+    margin-left: 10%;
+}
+
+.container__p {
+    color: black;
+    align-self: center;
+    padding-left: 20%;
+    font-size: 3vw;
+}
