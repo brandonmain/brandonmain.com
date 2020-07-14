@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import styles from './../styles/navbar.module.css'
+import styles from '../styles/navbar.module.css'
 import { Component } from 'react'
 import classNames from 'classnames'
 
@@ -15,25 +15,6 @@ class Navbar extends Component {
     navClicked = () => {
         this.setState({rotated: !this.state.rotated})
     }
-
-
-    /*
-    componentDidMount() {
-        const navs = document.querySelectorAll(".nav-link");
-        const bars = document.querySelectorAll(".bar");
-        var rotated = false;
-
-
-    function toggleNav(e) {
-
-        // Stop from scrolling to top of screen
-        e.preventDefault();
-
-        // Get all .nav-link elements and add/remove .active
-        navs.forEach(nav => nav.classList.toggle('active'));
-       
-
-*/
 
     render() {
     let rotateClass = this.state.rotated ? "styles.rotate_1" : "";
