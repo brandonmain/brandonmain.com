@@ -5,6 +5,7 @@ class Home extends Component {
 
   render() {
     return (
+      <>
       <div className={styles.container}>
         <div className={styles.square}/>
         <div className={styles.container__div}>
@@ -14,6 +15,10 @@ class Home extends Component {
         </p>
         </div>
       </div>
+      <div className={styles.about}>
+        <a href="About">About</a>
+      </div>
+      </>
     )
   }
 }

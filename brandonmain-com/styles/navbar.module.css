@@ -17,7 +17,7 @@
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
+	width: 80%;
 	height: 100%;
 	padding: 10px;
 	margin: 0;
@@ -41,7 +41,7 @@
 
 .filler {
 	display: flex;
-	flex-basis: 70%;
+	flex-basis: 60%;
 	font-size: 36px;
 	font-family: pika-ultra-script, sans-serif;
 	font-style: normal;
