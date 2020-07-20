@@ -1,44 +1,68 @@
-.container {
-    text-align: center;
-    height: 100vh;
-}
-
-.square {
-    position: fixed;
-    z-index: 0;
-    top: -300px;
-    left: -50vw;
-    height: 1000px;
-    width: 1000px;
-    background: #005c97; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #005c97, #006cb1); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #005c97, #006cb1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    clip-path: circle();
-}
-
-.container__div {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    
+.landing_ctn {
+    position: absolute;
     z-index: 10;
     width: 100%;
-    height: 25%;
-    justify-content: space-around;
-    color: black;
-    font-size: calc((100 - 26) * ((100vw - 300px) / (1600 - 300)));
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
 }
 
-.container__h1 {
-    font-size: min(max(1vw, 4vw), 100px);
-    align-self: start;
-    color: black;
-    margin-left: 10%;
+
+.top {
+    position: absolute;
+    z-index: 0;
+    background-image: linear-gradient(to right, #074e9c, #154b98, #1e4993, #23468f, #28448b, #28478b, #294a8a, #2a4d89, #2c568a, #335e8b, #3c668b, #486d8a);
+    width: 100%;
+    height: 30vh;
 }
 
-.container__p {
-    color: black;
-    align-self: center;
-    padding-left: 20%;
-    font-size: 3vw;
+.mtn_wrap {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px -10px 42px rgba(255,255,255,1));
+}
+.mtn {
+    position: absolute;
+    z-index: 1;
+    top: 10vh;
+    width: 100%;
+    height: 50vh;
+    clip-path: polygon(41% 32%, 51% 36%, 66% 34%, 77% 40%, 100% 33%, 100% 100%, 0 100%, 0 26%, 15% 30%, 28% 40%);
+    background-image: linear-gradient(to right bottom, #252d3a, #27333f, #2a3a43, #2e4046, #344649, #39494d, #3d4d50, #425054, #475157, #4d5159, #53525a, #585359);
+}
+
+.mtn_btm {
+    position: absolute;
+    z-index: 1;
+    top: 60vh;
+    height: 50vh;
+    width: 100%;
+    perspective: 300px;
+    background-image: linear-gradient(to left top, #a37f67, #a28670, #a18d7a, #a09384, #a0998f, #9a958d, #94908a, #8e8c88, #817d78, #746f68, #676059, #5b524b);
+}
+
+.road {
+    position: absolute;
+    height: 50vh;
+    width: 20vw;
+    margin-left: 40%;
+    clip-path: polygon(35% 0, 78% 0, 53% 32%, 48% 100%, 0 100%, 8% 31%);
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transform: rotateX(45deg);
+    background-image: linear-gradient(to left bottom, #445664, #455868, #465a6b, #475c6f, #485e73);
+}
+
+.road_line {
+    position: absolute;
+    height: 50vh;
+    width: 20vw;
+    margin-left: 40%;
+    clip-path: polygon(57% 0, 58% 0, 35% 33%, 24% 100%, 23% 100%, 34% 33%);
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transform: rotateX(45deg);
+    background-color: #F9AF72;
 }

@@ -1,4 +1,5 @@
 import styles from '../styles/index.module.css'
+import Head from 'next/head'
 import { Component } from 'react'
 
 class Home extends Component {
@@ -6,17 +7,19 @@ class Home extends Component {
   render() {
     return (
       <>
-      <div className={styles.container}>
-        <div className={styles.square}/>
-        <div className={styles.container__div}>
-        <h1 className={styles.container__h1}>Brandon Main</h1>
-        <p className={styles.container__p}>
-          Full Stack Web and Mobile Developer
-        </p>
-        </div>
+      <Head>
+        <title>Brandon Main | Welcome</title>
+      </Head>
+      <div className={styles.landing_ctn}>
+      <div className={styles.top}></div>
+      <div className={styles.mtn_wrap}>
+      <div className={styles.mtn}></div>
       </div>
-      <div className={styles.about}>
-        <a href="About">About</a>
+      <div className={styles.mtn_btm}>
+      <div className={styles.road}>
+      </div>
+      <div className={styles.road_line}></div>
+      </div>
       </div>
       </>
     )
