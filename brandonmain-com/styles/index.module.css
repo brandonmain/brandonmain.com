@@ -39,7 +39,7 @@
     top: 60vh;
     height: 50vh;
     width: 100%;
-    perspective: 300px;
+    perspective: 30vh;
     background-image: linear-gradient(to left top, #a37f67, #a28670, #a18d7a, #a09384, #a0998f, #9a958d, #94908a, #8e8c88, #817d78, #746f68, #676059, #5b524b);
 }
 
