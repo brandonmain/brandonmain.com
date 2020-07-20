@@ -27,6 +27,8 @@
 
 .nav_a {
 	text-decoration: none;
+	animation-name: pop_up;
+	animation-duration: 1s;
 }
 
 .name {
@@ -71,6 +73,13 @@
 	margin-right: 10px;
 	cursor: pointer;
 }
+
+@keyframes pop_up {
+    0%   {margin-top: unset;}
+    50%  {margin-top: -10px;}
+    100% {margin-top: unset;}
+}
+
 
 .nav_link a:hover {
 	color: #ccc;
@@ -125,6 +134,16 @@
 }
 
 @media only screen and (max-width: 800px) {
+
+	.nav_a {
+		animation: none;
+	}
+
+	.name {
+		animation-name: pop_up;
+		animation-duration: 1s;
+	}
+
 	.nav_ul {
 		flex-direction: column;
 		text-align: left;
@@ -154,5 +173,7 @@
 		top: 10px;
 		right: 10%;
 		font-size: 20px;
+		animation-name: pop_up;
+		animation-duration: 1s;
 	}
 }
