@@ -11,10 +11,46 @@
     display: flex;
     font-size: 70px;
     font-weight: 800;
+    animation-name: fade;
+    animation-duration: 1s;
 }
+
+.landing_desc {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+.headshot {
+    position: relative;
+    z-index: 2;
+    height: 300px;
+    width: 300px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 40px -18px rgba(0,0,0,0.48);
+    animation-name: pop;
+    animation-duration: 1s;
+}
+
+@keyframes pop {
+    0%   {transform: scale(0.8);}
+    50%  {transform: scale(1.05);}
+    100% {transform: scale(1.0);}
+}
+
+@keyframes fade {
+    0%   {opacity: 0;}
+    50%  {opacity: 0;}
+    100% {opacity: 1;}
+}
+
 
 @media screen and (max-width: 800px) {
     .landing_name {
         font-size: 40px;
+    }
+
+    .headshot {
+        height: 200px;
+        width: 200px;
     }
 }
