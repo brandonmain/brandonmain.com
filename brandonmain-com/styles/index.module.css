@@ -7,6 +7,19 @@
     width: 100%;
 }
 
+.index_container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: -webkit-linear-gradient(to left, #005c97, #006cb1); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #005c97, #006cb1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.9;
+    clip-path: polygon(46% 24%, 80% 6%, 100% 50%, 100% 99%, 0 100%, 0 0);
+}
+
 .landing_name {
     display: flex;
     font-size: 70px;
@@ -29,6 +42,21 @@
     box-shadow: 0px 0px 40px -18px rgba(0,0,0,0.48);
     animation-name: pop;
     animation-duration: 1s;
+}
+
+.social_ul{
+    display: flex;
+}
+
+.social {
+    height: 35px;
+    margin: 20px 10px 0px 10px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+a:hover > .social > path {
+    color: #005C97 !important;
 }
 
 @keyframes pop {

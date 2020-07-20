@@ -5,6 +5,7 @@
     color: #005C97;
     font-size: 17px;
     font-weight: 300;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +15,10 @@ body {
 
 ul {
     list-style: none;
+}
+
+path {
+    color: #d9d9d9;
 }
 
 @media screen and (max-width: 400px) {
