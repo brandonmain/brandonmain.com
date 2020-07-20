@@ -35,8 +35,12 @@
 	left: 10%;
     white-space:nowrap;
     font-family: megrim, sans-serif;
-    font-weight: bolder;
+    font-weight: 900;
     font-style: normal;
+}
+
+.name .nav_a {
+	font-weight: 900;
 }
 
 .filler {

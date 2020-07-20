@@ -10,16 +10,9 @@ class Home extends Component {
       <Head>
         <title>Brandon Main | Welcome</title>
       </Head>
-      <div className={styles.landing_ctn}>
-      <div className={styles.top}></div>
-      <div className={styles.mtn_wrap}>
-      <div className={styles.mtn}></div>
-      </div>
-      <div className={styles.mtn_btm}>
-      <div className={styles.road}>
-      </div>
-      <div className={styles.road_line}></div>
-      </div>
+      <div className={styles.index_container}>
+        <h1 className={styles.landing_name}>Brandon Main</h1>
+        <p>Full Stack Web and Mobile Software Engineer</p>
       </div>
       </>
     )
