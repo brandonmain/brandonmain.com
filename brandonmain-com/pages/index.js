@@ -26,9 +26,11 @@ class Home extends Component {
         </ul>
       </div>
       <div id="about" className={styles.about}>
+        {/*
         <div className={styles.about_card}>
         <h1>About Me</h1>
         </div>
+        */}
       </div>
       </>
     )
