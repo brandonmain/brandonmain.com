@@ -28,9 +28,9 @@ class Navbar extends Component {
                 <ul className={styles.nav_ul}>
                     <li className={styles.name}><a className={styles.nav_a} href="#">BM</a></li>
                     <li className={styles.filler}><a className={styles.nav_a_filler} href="#">BM</a></li>
-                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a className={styles.nav_a}>Home</a></li>
-                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a className={styles.nav_a}>About</a></li>
-                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a className={styles.nav_a}>Work</a></li>
+                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a href="#home" className={styles.nav_a}>Home</a></li>
+                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a href="#about" className={styles.nav_a}>About</a></li>
+                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a href="#work" className={styles.nav_a}>Work</a></li>
                     <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a className={styles.nav_a}>Blog</a></li>
                     <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a className={styles.nav_a}>Contact</a></li>
                 </ul>

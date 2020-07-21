@@ -12,7 +12,7 @@ class Home extends Component {
       <Head>
         <title>Brandon Main | Welcome</title>
       </Head>
-      <div className={styles.index_container}>
+      <div id="home" className={styles.index_container}>
       <img className={styles.headshot} src={'/img/bm.jpg'}/>
         <h1 className={styles.landing_name}>Brandon Main</h1>
         <p className={styles.landing_desc}>Full Stack Web and Mobile Software Engineer</p>
@@ -25,7 +25,10 @@ class Home extends Component {
           <li><a href="https://www.linkedin.com/in/brandon-main/"><FontAwesomeIcon className={styles.social} icon={faLinkedin} /></a></li>
         </ul>
       </div>
-      <div className={styles.index_container2}>
+      <div id="about" className={styles.about}>
+        <div className={styles.about_card}>
+        <h1>About Me</h1>
+        </div>
       </div>
       </>
     )
