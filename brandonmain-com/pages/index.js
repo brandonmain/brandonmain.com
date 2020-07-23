@@ -25,12 +25,14 @@ class Home extends Component {
           <li><a href="https://www.linkedin.com/in/brandon-main/"><FontAwesomeIcon className={styles.social} icon={faLinkedin} /></a></li>
         </ul>
       </div>
-      <div id="about" className={styles.about}>
-        {/*
-        <div className={styles.about_card}>
-        <h1>About Me</h1>
-        </div>
-        */}
+      <div id="about" className={styles.about_id}/>
+      <div className={styles.about_title}>
+      <h1 data-letters="About Me">About Me</h1>
+      </div>
+      <div className={styles.about}>
+        <div className={styles.about_card}></div>
+        <div className={styles.about_card}></div>
+        <div className={styles.about_card}></div>
       </div>
       </>
     )
