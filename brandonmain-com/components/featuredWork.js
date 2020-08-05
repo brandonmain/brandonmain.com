@@ -9,8 +9,8 @@ class FeaturedWork extends Component {
     render() {
         return(
             <>
-            <div>
-                <h2>Featured Work</h2>
+            <div id="work" className={styles.featured_title}>
+            <h1 data-letters="Featured Work">Featured Work</h1>
             </div>
             <div className={styles.featured_work}>
                 <div className={styles.project_card}></div>

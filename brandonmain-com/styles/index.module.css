@@ -44,6 +44,37 @@
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 }
 
+.featured_title > h1 {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: rgb(0,108,177,0.9);
+}
+
+.featured_title > h1:after {
+    left: 0;
+    width: 100%;
+    content: attr(data-letters);
+    position: absolute;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: -webkit-linear-gradient(to left, rgba(0,92,151, 0.9), rgb(0,108,177,0.9)); 
+    background: linear-gradient(to left, rgba(0,92,151, 0.9), rgb(0,108,177,0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 1;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
 .about {
     display: flex;
     justify-content: space-evenly;
@@ -52,10 +83,12 @@
     background: -webkit-linear-gradient(to left, #005c97, #006cb1); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #005c97, #006cb1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 0.9;
+    height: 100%;
 }
 
 .card_header {
     text-align: center;
+    margin-bottom: -15px;
 }
 
 .card_header > h2 {
@@ -70,30 +103,51 @@
     text-shadow: 1px 2px 2px rgba(86,86,86,0.74);
 }
 
-.card_header > h2:after {
-    left: 0;
-    width: 100%;
-    content: attr(data-letters);
-    position: absolute;
-    z-index: 2;
-    justify-content: center;
-    align-items: center;
-    color: #E5E5E5;
-    opacity: 1;
-    background-color: white;
-    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
-}
-
 
 .about_card {
     display: flex;
+    flex-direction: column;
     width: 250px;
-    height: 250px;
+    height: 260px;
     background-color: white;
+    margin-bottom: 50px;
 }
 
-.about_card:nth-child(2) {
-    height: 275px;
+.about_card > h3 {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.about_card > img {
+    width: 100%;
+}
+
+.about_card > p {
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    height: 260px;
+}
+
+.skills > img {
+    height: 100%;
+    width: auto;
+    padding: 20px;
 }
 
 .landing_name {
@@ -138,6 +192,7 @@ a:hover > .social > path {
 .featured_work {
     display: flex;
     flex-direction: row;
+    margin-top: 5px;
 }
 
 .project_card {
@@ -194,7 +249,7 @@ a:hover > .social > path {
         font-size: 40px;
     }
 
-    .about_title > h1 {
+    .about_title > h1, .featured_title > h1{
         font-size: 40px;
     }
 
@@ -203,13 +258,24 @@ a:hover > .social > path {
         width: 200px;
     }
 
-    .about {
+    .about, .featured_work {
         flex-direction: column;
         align-items: center;
-        height: 200vh;
+        overflow: hidden;
     }
 
-    .about_card:nth-child(2) {
-        height: 250px;
+    .about_card {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .skills {
+        width: 100vw;
+        overflow-x: scroll;
+    }
+
+    .project_card {
+        width: 100%;
     }
 }

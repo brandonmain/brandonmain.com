@@ -1,4 +1,4 @@
-import styles from '../styles/index.module.css'
+import styles from '../styles/index.module.css';
 import { Component } from 'react';
 
 class AboutCard extends Component {
@@ -11,19 +11,25 @@ class AboutCard extends Component {
         let card;
         if(this.props.name === "Education") {
             card = 
-                <h3>University of Nevada, Reno
-                    Bachelor of Science in Computer Science and Engineering
-                </h3>;
+                <>
+                <img src={'/img/unr.png'} />
+                <h3>Bachelor of Science in Computer Science and Engineering</h3>
+                </>;
         } else if(this.props.name === "Skills") {
             card = 
-                <h3>
-
-                </h3>;
+                <div className={styles.skills}>
+                    <img style={{backgroundColor: 'black'}}  src={'/img/react.png'}/>
+                    
+                    <img style={{backgroundColor: '#61DAFB'}} src={'/img/nextjs.png'}/>
+                    
+                    <img style={{backgroundColor: 'black'}} src={'/img/sql.png'}/>
+                    
+                </div>;
         } else if(this.props.name === "Personal") {
             card = 
-                <h3>
-                    
-                </h3>;
+                <p>
+                    I'm the type of person that loves dipping my feet into the waters of a new challenge. I enjoy learning new technologies and understanding how they interface with existing ones. I also spend time with friends and occasionally document parts of my life on my social media accounts. 
+                </p>;
         }
         
 
