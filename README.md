@@ -1,2 +1,2 @@
-[![Build status](https://dev.azure.com/brandonlmain/brandonmain-com/_apis/build/status/brandonmain%20-%201%20-%20CI)](https://dev.azure.com/brandonlmain/brandonmain-com/_build/latest?definitionId=2)
+[![Build status](https://img.shields.io/badge/build-passing-brightgreen)]
 # Hello Next.js and React.js

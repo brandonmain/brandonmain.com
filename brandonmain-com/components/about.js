@@ -17,11 +17,11 @@ class About extends Component {
             </div>
             <div className={styles.about}>
                 {/* Card 1 */}
-                <AboutCard name={"Education"}/>
+                <AboutCard name={"Personal"}/>
                 {/* Card 2 */}
                 <AboutCard name={"Skills"}/>
                 {/* Card 3 */}
-                <AboutCard name={"Personal"}/>
+                <AboutCard name={"Education"}/>
             </div>
             </>
         );

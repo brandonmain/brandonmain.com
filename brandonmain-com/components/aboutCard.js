@@ -1,5 +1,6 @@
 import styles from '../styles/index.module.css';
 import { Component } from 'react';
+import ManWorking from '../public/img/man_working.svg';
 
 class AboutCard extends Component {
    
@@ -17,19 +18,10 @@ class AboutCard extends Component {
                 </>;
         } else if(this.props.name === "Skills") {
             card = 
-                <div className={styles.skills}>
-                    <img style={{backgroundColor: 'black'}}  src={'/img/react.png'}/>
-                    
-                    <img style={{backgroundColor: '#61DAFB'}} src={'/img/nextjs.png'}/>
-                    
-                    <img style={{backgroundColor: 'black'}} src={'/img/sql.png'}/>
-                    
-                </div>;
+                <></>;
         } else if(this.props.name === "Personal") {
             card = 
-                <p>
-                    I'm the type of person that loves dipping my feet into the waters of a new challenge. I enjoy learning new technologies and understanding how they interface with existing ones. I also spend time with friends and occasionally document parts of my life on my social media accounts. 
-                </p>;
+                <></>;
         }
         
 

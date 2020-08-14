@@ -77,17 +77,17 @@
 
 .about {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
     padding-top: 50px;
     padding-bottom: 100px;
     background: -webkit-linear-gradient(to left, #005c97, #006cb1); /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #005c97, #006cb1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     opacity: 0.9;
-    height: 100%;
 }
 
 .card_header {
-    text-align: center;
+    text-align: left;
     margin-bottom: -15px;
 }
 
@@ -107,8 +107,8 @@
 .about_card {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 260px;
+    width: 100%;
+    height: auto;
     background-color: white;
     margin-bottom: 50px;
 }
@@ -126,6 +126,9 @@
 
 .about_card > img {
     width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 auto;
 }
 
 .about_card > p {
@@ -133,6 +136,10 @@
     color: black;
     font-weight: 500;
     padding: 20px;
+}
+
+.card_wrapper {
+    width: 80%;
 }
 
 .skills {
@@ -192,16 +199,24 @@ a:hover > .social > path {
 .featured_work {
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
+    justify-content: center;
+    margin-top: 75px;
 }
 
 .project_card {
     display: flex;
-    border: 1px solid red;
+    justify-content: center;
     min-width: 200px;
     min-height: 200px;
-    width: 33%;
-    height: 300px;
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.project_card > img {
+    width: auto;
+    height: 110%;
 }
 
 .viewMoreContainer {
@@ -216,7 +231,7 @@ a:hover > .social > path {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 200px;
     height: 50px;
     background: -webkit-linear-gradient(to left, rgba(0,92,151, 0.9), rgba(0,108,177,0.9)); 
     background: linear-gradient(to left, rgba(0,92,151, 0.9), rgba(0,108,177,0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -258,24 +273,13 @@ a:hover > .social > path {
         width: 200px;
     }
 
-    .about, .featured_work {
-        flex-direction: column;
-        align-items: center;
-        overflow: hidden;
-    }
-
-    .about_card {
-        width: 100%;
-        height: auto;
-        overflow: hidden;
-    }
-
     .skills {
         width: 100vw;
         overflow-x: scroll;
     }
 
     .project_card {
+        justify-content: flex-start;
         width: 100%;
     }
 }
