@@ -1,6 +1,5 @@
 import styles from '../styles/index.module.css';
 import { Component } from 'react';
-import ManWorking from '../public/img/man_working.svg';
 
 class AboutCard extends Component {
    
