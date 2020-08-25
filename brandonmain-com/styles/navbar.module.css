@@ -38,11 +38,13 @@
     white-space:nowrap;
     font-family: megrim, sans-serif;
     font-weight: 900;
-    font-style: normal;
+	font-style: normal;
+	cursor: default;
 }
 
 .name .nav_a {
 	font-weight: 900;
+	cursor: default;
 }
 
 .filler {

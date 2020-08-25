@@ -170,6 +170,7 @@
 .landing_desc {
     animation-name: fade;
     animation-duration: 1s;
+    color: black;
 }
 
 .headshot {
