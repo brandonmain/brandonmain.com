@@ -256,6 +256,16 @@ a:hover > .social > path {
     padding: 50px;
 }
 
+.mwidget {
+    padding: 20px;
+}
+
+.mwidget:hover {
+    transform: scale(1.01);
+    transition-duration: 0.5s;
+    box-shadow: 0px 0px 40px -18px rgba(0,0,0,0.48);
+}
+
 @keyframes pop {
     0%   {transform: scale(0.8);}
     50%  {transform: scale(1.05);}

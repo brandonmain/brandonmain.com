@@ -24,7 +24,7 @@ class Blog extends Component {
                 onError={this.handleScriptError.bind(this)}
                 onLoad={this.handleScriptLoad.bind(this)}
                 />
-                <div id="medium-widget"></div>
+                <div id="medium-widget" className={styles.mwidget}></div>
             </div>
             </>
         );
