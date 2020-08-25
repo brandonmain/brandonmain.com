@@ -17,11 +17,11 @@ class AboutCard extends Component {
                 </>;
         } else if(this.props.name === "Skills") {
             card = 
-                <></>;
+                <><img src={'/img/travel_plans.png'} /></>;
         } else if(this.props.name === "Personal") {
             card = 
-                <></>;
-        }
+                <p>I am a Reno, Nevada based Full Stack Developer. I have a passion for UI/UX and front-end design. I pride myself on using design best practices and creating beautiful content that myself and others love to use. I’m currently in search of a new full-time software development position and am also open to freelance work as well!</p>;
+            }
         
 
         return(

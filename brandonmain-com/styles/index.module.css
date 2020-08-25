@@ -87,7 +87,7 @@
 }
 
 .card_header {
-    text-align: left;
+    text-align: center;
     margin-bottom: -15px;
 }
 
@@ -121,25 +121,27 @@
     text-align: center;
     color: black;
     font-weight: 500;
-    padding: 5px;
+    padding: 20px;
+    padding-top: 0px;
 }
 
 .about_card > img {
     width: 100%;
+    height: auto;
     max-width: 500px;
     max-height: 500px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .about_card > p {
     text-align: center;
     color: black;
     font-weight: 500;
-    padding: 20px;
+    padding: 40px;
 }
 
 .card_wrapper {
-    width: 80%;
+    width: 100%;
 }
 
 .skills {

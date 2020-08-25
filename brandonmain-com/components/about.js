@@ -22,6 +22,7 @@ class About extends Component {
                 <AboutCard name={"Skills"}/>
                 {/* Card 3 */}
                 <AboutCard name={"Education"}/>
+            
             </div>
             </>
         );
