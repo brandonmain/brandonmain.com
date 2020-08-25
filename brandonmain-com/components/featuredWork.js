@@ -20,9 +20,6 @@ class FeaturedWork extends Component {
                     <img src={'/img/5.8-inch-Screenshot-4.jpg'}/>
                 </div>
             </div>
-            <div className={styles.viewMoreContainer}>
-                <div className={styles.viewMore}>View More</div>
-            </div>
             </>
         );
     }

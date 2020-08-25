@@ -31,8 +31,7 @@ class Navbar extends Component {
                     <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a href="#home" className={styles.nav_a}>Home</a></li>
                     <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a href="#about" className={styles.nav_a}>About</a></li>
                     <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a href="#work" className={styles.nav_a}>Work</a></li>
-                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a className={styles.nav_a}>Blog</a></li>
-                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a className={styles.nav_a}>Contact</a></li>
+                    <li className={classNames({[styles.nav_link]: true, [styles.active]: this.state.rotated})}><a href="#blog" className={styles.nav_a}>Blog</a></li>
                 </ul>
                 <div className={styles.menuIcon} onClick = {this.navClicked.bind(this)}>
                     <div className={classNames({[styles.bar]: true, [styles.rotate_1]: this.state.rotated})}></div>

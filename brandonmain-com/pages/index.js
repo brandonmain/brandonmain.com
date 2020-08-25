@@ -1,6 +1,7 @@
 import Home from '../components/home';
 import About from '../components/about';
 import FeaturedWork from '../components/featuredWork';
+import Blog from '../components/blog';
 import { Component } from 'react';
 
 
@@ -12,6 +13,7 @@ class Index extends Component {
       <Home/>
       <About/>
       <FeaturedWork/>
+      <Blog/>
       </>
     )
   }
