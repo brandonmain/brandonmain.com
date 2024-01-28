@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "./globals.css";
+import classNames from "classnames";
 
 config.autoAddCss = false;
 
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={classNames(inter.className, "overscroll-none")}>
+        {children}
+      </body>
     </html>
   );
 }

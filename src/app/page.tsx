@@ -65,7 +65,7 @@ export default function Home() {
         </div>
         <a
           href="https://www.linkedin.com/in/brandon-main/"
-          className="mt-3 self-start text-2xl hover:opacity-50"
+          className="mt-3 mb-5 self-start text-2xl hover:opacity-50"
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
