@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { ThemedLayout } from "./components/ThemedLayout";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons/faLinkedinIn";
 
-export default function Home() {
+const Home = () => {
   return (
     <ThemedLayout>
       <main className="flex min-h-screen flex-col items-center p-pp-5">
@@ -65,11 +65,13 @@ export default function Home() {
         </div>
         <a
           href="https://www.linkedin.com/in/brandon-main/"
-          className="mt-3 mb-5 self-start text-2xl hover:opacity-50"
+          className="mt-3 mb-8 self-start text-2xl hover:opacity-50"
         >
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
       </main>
     </ThemedLayout>
   );
-}
+};
+
+export default Home;
