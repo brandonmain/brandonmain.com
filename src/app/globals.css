@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 :root {
   --background: white;
@@ -10,6 +8,11 @@
 [data-theme="dark"] {
   --background: black;
   --foreground: white;
+}
+
+/* Custom 5% padding utility (was `padding.pp-5` in tailwind.config.ts) */
+@utility p-pp-5 {
+  padding: 5%;
 }
 
 @layer base {
