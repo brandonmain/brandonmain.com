@@ -10,6 +10,9 @@ export function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
+    // Mount gate: avoids next-themes hydration mismatch by deferring
+    // theme-dependent render until after the client mounts.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
 
