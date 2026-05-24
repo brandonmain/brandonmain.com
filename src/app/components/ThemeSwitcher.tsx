@@ -20,7 +20,11 @@ export function ThemeSwitcher() {
 
   return (
     <div>
-      <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+      <button
+        aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+        className="cursor-pointer"
+        onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      >
         <FontAwesomeIcon icon={theme === "dark" ? faToggleOn : faToggleOff} />
       </button>
     </div>

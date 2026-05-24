@@ -1,13 +1,23 @@
 @import "tailwindcss";
 
+/* next-themes uses the `class` strategy (adds `.dark` to <html>);
+   wire that into Tailwind's `dark:` variant for v4. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: white;
-  --foreground: black;
+  --background: #f5f0e6;
+  --foreground: #33302a;
 }
 
-[data-theme="dark"] {
-  --background: black;
-  --foreground: white;
+.dark {
+  --background: #1a1a1a;
+  --foreground: #e6e0d1;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-weight: 450;
 }
 
 /* Custom 5% padding utility (was `padding.pp-5` in tailwind.config.ts) */
@@ -16,9 +26,6 @@
 }
 
 @layer base {
-  h1 {
-    @apply text-2xl;
-  }
   h2 {
     @apply text-xl font-bold;
   }
